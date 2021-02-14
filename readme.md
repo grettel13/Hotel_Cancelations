@@ -80,3 +80,4 @@ Additional Details:
 - **hotel_bookings.ipynb** - main notebook
 - **hotels.py** - helper functions utilized by main notebook
 - **hotel_create_psql_db.ipynb** - notebook used to load original data in CSV formats to a postgres sql database locally
+- **sql_challenges** dir - used to submit SQL exercises unrelated to project success
