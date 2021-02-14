@@ -110,6 +110,7 @@ def match_df_cols(df1, df2):
     cols_index = list(df2.columns[~mask])
     if cols_index:
         print(f'Removed {cols_index} from df2')
+        df2 = df2[df1.columns]
 
     return df1, df2
 
