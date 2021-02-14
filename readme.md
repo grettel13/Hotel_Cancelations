@@ -28,13 +28,12 @@ Tuning the classification model for the precision metric allows for a more conse
 
 The data is sourced from an article called [Hotel booking demand datasets](https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib6) by Nuno Antonio, Ana Almeida, and Luis Nunes in 2019.
 
-The scrubbed data was made publicly available from the hotels' property management system (PMS) for investigation.
+The scrubbed data was made publicly available from the hotels' property management system (PMS) for investigation and learning.
 
-Data contains:
+Data over a 2-year span contains:
 - 2 hotels
 - ~120K observations
 - 32 features
-- data over 2 years
 
 # Features used:
 
