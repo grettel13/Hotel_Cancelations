@@ -38,59 +38,40 @@ Data contains:
 
 # Features used:
 
-<style>
-.heatMap {
-}
-.heatMap th {
-background: white;
-}
-.heatMap tr:nth-child(1) { background: grey; }
-.heatMap tr:nth-child(2) { background: white; }
-.heatMap tr:nth-child(3) { background: grey; }
-</style>
+18 features were selected. For a full list of features and additional details, please reference the data source article.
 
-<div class="heatMap">
+Basic booking features:
 
-| Everything | in this table | is Centered |  and the table will only take up 70% of the screen width  |
-| -- | -- | -- | -- |
-| This | is | a | Red Row |
-| This | is | an | Orange Row |
-| This | is | a | Green Row |
-
-</div>
-
-24 features were selected from 190 based on data available for high volumes of schools.
-
-The following features were provided as % of total students (overall), but also broken down by ethnicity.
-
-| Feature | Breakdown
-| --------------- | --------------
-| Graduation Rates | Overall, Black, White, Hispanic
-| Population Rates | Overall, Black, White, Hispanic
-| Suspension Rates | Overall, Black, White
-| Chronically Absent Rates | Overall, Black, White
-<br/>
-
-Additional School Features:
 | Feature | Description
 | --------------- | --------------
-| Grades | Grades offered at school. Traditional 9-12 grade or "other"
-| School Type | Public or Public Charter
-| Students | Number of students at school
-| Dual Enrollment Rate | % of students enrolled in dual enrollment
-| AP course rate | % of students enrolled in AP courses
-| Teacher experienced rate | % of teachers with 3 years experience or more
-| Avg teacher salary | Average teacher salary
-| Teacher cert rate | % of teachers with certification
-| Student : Teacher Ratio | Number of students per 1 teacher
-| Student : Counselor Ratio | Number of students per 1 counselor
+| Hotel | H1 (Resort Hotel) or H2 (City Hotel)
+| Stay Month | Month the arrival date occurs
+| Week nights | Number of week nights in reservation
+| Weekend nights | Number of weekend nights in reservation
+| Lead time | Days in advance of arrival date booking was made
+| Adults | Number of adults in reservation
+| Country | **Transformed**: Nationality of guest. 1 for Portugal, 0 for any other
+| ADR | Average daily rate
+| Total stay cost | **Calculated**: Number of days in stay * ADR
+| ADR over average hotel cost | **Calculated**: 1 if exceeds average hotel ADR for all bookings in train set. 0 if under average ADR
+<br/>
+
+Additional Details:
+| Feature | Description
+| --------------- | --------------
+| Meal | Meal type following hospitality standards
+| Parking spaces | Number of parking spaces needed
+| Special requests | Number of special requests made
+| Deposit type | Ex: No deposit, Non-refundable
+| Agent | **Transformed**: 1 if agent used for booking. 0 if no agent used
+| Marget segment | Ex: Online Travel Agency
 
 <br/>
 
 # Tools Used:
 
-- Selenium
-- Beautiful Soup
+- Tableau
+- Pandas
 - Seaborn
 - Matplotlib
 
